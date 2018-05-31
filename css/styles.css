@@ -1,0 +1,250 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+
+/*
+Table Of Contents
+
+# BRANDING
+  
+  tribe-black: rgb(0,0,0);
+  tribe-grey: rgb(204,204,204);
+  tribe-dark-red: rgb(139,0,10);
+  tribe-yellow: rgb(253,171,0);
+  tribe-navy-blue: rgb(0,0,128);
+  
+
+# TYPOGRAPHY
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;;
+
+
+
+/*
+* ==========================================================
+*     BRANDING 
+* ==========================================================
+*/
+:root {
+  /*colors*/
+  --tribe-black: rgb(0,0,0);
+  --tribe-grey: rgb(204,204,204);
+  --tribe-dark-red: rgb(139,0,10);
+  --tribe-yellow: rgb(253,171,0);
+  --tribe-navy-blue: rgb(0,0,128);
+ 
+  /*typography*/
+  --tribe-heading: font-family: 'Open Sans', sans-serif;
+  --tribe-paragraph: font-family: 'Roboto', sans-serif;
+  
+}
+
+/*
+*==========================================================
+*     TYPOGRAPHY 
+* ==========================================================
+*/
+
+body {
+  font-family: var(--tribe-paragraph);
+  background: #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--tribe-heading);
+  font-weight: 400;
+  color: var(--tribe-black);
+  text-transform: uppercase;
+  /* color: #0a145a; */
+}
+/* .h1, h1 {
+  font-size: 2.75rem;
+  text-transform: uppercase;
+} */
+p {
+  color: var(--tribe-black);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+a:link, a:visited {
+  font-family: var(--tribe-heading);
+  font-weight: 700;
+  color: var(--tribe-black);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover { 
+  color: var(--tribe-yellow);
+}
+
+.logo {
+  text-transform: uppercase;
+  font-family: var(--tribe-paragraph);
+  
+}
+/*
+*==========================================================
+*     FORMS, INPUTS, BUTTONS
+* ==========================================================
+*/
+.btn {
+  border-radius: 0%;
+}
+.btn-light {
+  background: -webkit-linear-gradient(top, #f2f2f2, #e2e2e2);
+  transition: 0.5s;
+}
+.btn-light:hover{
+  background: -webkit-linear-gradient(bottom, #f2f2f2, #e2e2e2);
+}
+
+.btn-primary {
+  background: rgb(253,171,0);
+  color: var(--tribe-black);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: rgb(238, 163, 0);
+  color: var(--tribe-black);
+}
+.form-control {
+  border: 2px solid #000;
+  border-radius: 0;
+}
+label {
+  font-weight: 700;
+}
+
+/*
+*==========================================================
+*     HEADER NAV
+* ==========================================================
+*/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 25px;
+  background: #FFF;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header .logo {
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  float: left;
+  font-weight: bold;
+
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: var(--tribe-yellow);
+}
+
+.menu-toggle {
+  color: black;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 955px){
+  .menu-toggle {
+    display: block;
+  }
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #373636;
+    top: 80px;
+    left: -100%;
+    transition: 0.5s;
+    z-index: 3;
+  }
+  header nav.active {
+    left: 0;
+    z-index: 3;
+  }
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+  
+  header nav ul li a {
+    color: white;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+  }
+}
+
+img.svg-slants {
+  width: 300px;
+} 
+
+section.hero {
+  width:100%;
+  height:auto;
+  background: url('../img/hero-one.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+  margin: 80px 0;
+  position: relative;
+}
+
+section.hero:after {
+  content: "";
+  position: absolute;
+  bottom: -32px;
+  height: 65px;
+  width: 100%;
+  right: 0;
+  background: url(../img/tribe-texture-slants.svg);
+  opacity: 0.5;
+}
+.hero-text {
+  padding-top: 165px;
+  padding-bottom: 136px;
+  margin-left: 20px;
+}
+
+.hero .hero-text h1,
+.hero .hero-text h4 {
+  color: white;
+
+}
+
+
+
