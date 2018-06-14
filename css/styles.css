@@ -80,7 +80,7 @@ a:hover {
 .logo {
   text-transform: uppercase;
   font-family: var(--tribe-paragraph);
-  
+
 }
 /*
 *==========================================================
@@ -102,6 +102,7 @@ a:hover {
   background: rgb(253,171,0);
   color: var(--tribe-black);
   border: none;
+  
 }
 
 .btn-primary:hover {
@@ -157,12 +158,11 @@ header nav ul li {
 
 header nav ul li a {
   height: 50px;
-  line-height: 50px;
+  line-height: 60px;
   padding: 0 20px;
   color: #000;
   text-decoration: none;
-  display: block;
-  
+  display: block; 
 }
 
 header nav ul li a:hover,
@@ -220,11 +220,11 @@ section.hero {
   background-position: center;
   background-size:cover;
   background-attachment: fixed;
-  margin: 80px 0;
+  margin: 80px 0 50px;
   position: relative;
+  border-bottom: 5px solid rgb(253,171,0);
 }
-
-section.hero:after {
+/* section.hero:after {
   content: "";
   position: absolute;
   bottom: -32px;
@@ -233,7 +233,7 @@ section.hero:after {
   right: 0;
   background: url(../img/tribe-texture-slants.svg);
   opacity: 0.5;
-}
+} */
 .hero-text {
   padding-top: 165px;
   padding-bottom: 136px;
@@ -246,5 +246,83 @@ section.hero:after {
 
 }
 
+section#why {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 15px;
+}
+
+#why-photo {
+  background: url(../img/750x485.png);
+  background-repeat: no-repeat;  
+  height: 484px;
+  background-position: center;
+  -webkit-clip-path: polygon(30% 0%, 100% 0, 100% 30%, 100% 70%, 70% 100%, 0 100%, 0% 70%, 0% 30%);
+clip-path: polygon(30% 0%, 100% 0, 100% 30%, 100% 70%, 70% 100%, 0 100%, 0% 70%, 0% 30%);
+}
+/* #why-photo:after {
+  content: "";
+  position: absolute;
+  top: 441px;
+  height: 65px;
+  width: 100%;
+  right: 0;
+  background: url(../img/tribe-texture-slants.svg);
+  opacity: 0.5;
+} */
+section#workouts {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 15px;
+  background: black;
+  border-top: 5px solid rgb(253,171,0);
+  background: url('../img/hero-one.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+}
+.workouts-item {
+  box-sizing: border-box;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+  margin-bottom:35px;
+  transition: all .2s ease-in-out;
+}
+.workouts-item:hover {
+  transform: scale(1.1);
+  background: rgba(0,0,0,1);
+}
+.workouts-header {
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  
+}
+
+.workouts-header h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.workouts-header h5 {
+  text-align: center;
+  text-transform: none;
+  color: #fff;
+
+}
+
+.workouts-item-header h2 {
+  color: #fff;
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgb(253,171,0);
+  
+}
+.workouts-item-body p {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-top: 10px;
+}
 
 

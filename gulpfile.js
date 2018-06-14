@@ -19,7 +19,7 @@ gulp.task('serve', function() {
     }
 });
 
-gulp.watch('./css/styles.css', ['styles']);
+gulp.watch('./css/styles.css').on('change', browserSync.reload);
 gulp.watch('./**/*.html').on('change', browserSync.reload);
 
 });
