@@ -225,7 +225,7 @@ img.svg-slants {
 section.hero {
   width:100%;
   height:auto;
-  background: url('http://via.placeholder.com/1600x600?text=Image');
+  background: url('../img/placeholder-background-one.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
@@ -253,7 +253,7 @@ section#why {
 }
 
 #why-photo {
-  background: url(../img/750x485.png);
+  background: url('../img/placeholder-img-one.jpg');
   background-repeat: no-repeat;  
   height: 484px;
   background-position: center;
@@ -353,8 +353,8 @@ section#pricing .pricing-header::after {
   transform: rotate(-2deg);
 }
 #pricing h4 {
-  font-size: .95rem;
-  font-weight: 700;
+
+  font-weight: 300;
 }
 
 section#pricing .row + .row {
@@ -379,4 +379,14 @@ section#mindbody p::after {
   height: 1px;
   background-color: var(--tribe-primary-blue);
   margin: 25px auto 0;
+}
+
+section#mindbody img {
+  width: 200px;
+}
+
+@media (max-width:767px){
+  section#mindbody img {
+    margin-bottom: 15px;
+  }
 }
