@@ -64,6 +64,10 @@ p {
   font-size: 1rem;
   line-height: 1.5;
 }
+sup {
+  vertical-align: middle;
+  font-size: 1rem;
+}
 a:link, a:visited {
   font-family: var(--tribe-heading);
   font-weight: 700;
@@ -307,6 +311,9 @@ section#pricing {
   padding-top: 35px;
   padding-bottom: 35px;
   padding-left: 15px;
+  background: url('../img/white-1044659_640.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .pricing-header {
   margin: 0 auto;
@@ -331,14 +338,19 @@ section#pricing .pricing-header::after {
 }
 
 .pricing-tier {
- 
   box-sizing: border-box;
   padding: 32px;
   margin-bottom: 15px;
   background: #fff;
-  -webkit-box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.08);
-  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.08);
+  /* -webkit-box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.08); */
   margin-bottom: 15px;
+}
+
+.pricing-tier.year-unlimited.text-center {
+  width: 90%;
+  margin: 0 auto;
+  transform: rotate(-2deg);
 }
 #pricing h4 {
   font-size: .95rem;
@@ -347,4 +359,24 @@ section#pricing .pricing-header::after {
 
 section#pricing .row + .row {
   margin-top: 20px;
+}
+
+section#mindbody  {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background: var(--tribe-black);
+}
+
+section#mindbody h1,
+section#mindbody p {
+  color: var(--tribe-secondary-blue);
+}
+
+section#mindbody p::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 1px;
+  background-color: var(--tribe-primary-blue);
+  margin: 25px auto 0;
 }
