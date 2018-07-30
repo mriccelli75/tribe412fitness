@@ -230,14 +230,23 @@ section.hero {
   background-position: center;
   background-size:cover;
   background-attachment: fixed;
-  margin: 80px 0 50px;
+  margin: 80px 0 0;
   position: relative;
-  border-bottom: 5px solid var(--tribe-primary-blue);
+  
+}
+@media (max-width:767px){
+  section.hero {
+  background: url('../img/placeholder-background-one.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size:cover;
+  }
 }
 .hero-text {
   padding-top: 165px;
   padding-bottom: 136px;
-  margin-left: 20px;
+  
 }
 .hero .hero-text h1,
 .hero .hero-text h4 {
@@ -263,7 +272,6 @@ section#workouts {
   padding-top: 35px;
   padding-bottom: 35px;
   background: black;
-  border-top: 5px solid var(--tribe-primary-blue);
   background: url('http://via.placeholder.com/1600x600?text=Image');
   background-repeat: no-repeat;
   background-position: center center;
@@ -314,6 +322,17 @@ section#pricing {
   background: url('../img/white-1044659_640.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width:767px){
+  section#pricing {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 0;
+    background: url('../img/white-1044659_640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 .pricing-header {
   margin: 0 auto;
@@ -389,4 +408,9 @@ section#mindbody img {
   section#mindbody img {
     margin-bottom: 15px;
   }
+}
+
+section#contact-us {
+  padding-top: 35px;
+  padding-bottom:35px;
 }
