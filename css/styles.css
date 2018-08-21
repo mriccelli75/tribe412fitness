@@ -14,8 +14,8 @@ Table Of Contents
   
 
 # TYPOGRAPHY
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Roboto', sans-serif;;
+  --tribe-heading: font-family: 'Open Sans', sans-serif;
+  --tribe-paragraph: font-family: 'Roboto', sans-serif;;
 
 
 
@@ -47,8 +47,7 @@ body {
   font-family: var(--tribe-paragraph);
   background: #fff;
   font-size: 14px;
-  margin-bottom: 60px;
-
+   
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--tribe-heading);
@@ -177,7 +176,6 @@ header nav ul li a {
   text-decoration: none;
   display: block; 
 }
-
 header nav ul li a:hover,
 header nav ul li a.active {
   color: var(--tribe-secondary-blue);
@@ -220,11 +218,6 @@ header nav ul li a.active {
     border-bottom: 1px solid rgba(0,0,0,0.2);
   }
 }
-
-img.svg-slants {
-  width: 300px;
-} 
-
 section.hero {
   width:100%;
   height:auto;
@@ -457,6 +450,22 @@ svg {
   color: #fff;
   position: relative;
   top: 7px;
+}
+
+#footer {
+  background: black;
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 35px;
+}
+
+footer span.copyright {
+  color: var(--tribe-secondary-blue);
+  font-size: 90%;
+  line-height: 40px;
+  text-transform: none;
+  font-family: var(--tribe-paragraph);
 }
 
 
